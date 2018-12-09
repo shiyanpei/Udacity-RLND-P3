@@ -1,22 +1,10 @@
-# Introduction
+# Report
 
 The goal of this project is to train two agents by deep reinforcement learning algorithms so that they can control rackets to bounce a ball over a net.
 
-# Implemention
+# Method
 
-Multi-Agent Distributed Distributional Deep Deterministic Policy Gradients (MAD4PG) has been implemented.
-
-## Distributed Distributional Deep Deterministic Policy Gradients (D4PG)
-
-![alt text](https://github.com/kelvin84hk/DRLND_P3_collab-compet/blob/master/pics/d4pg_algo.jpg)
-
-## Multi-Agent Deep Deterministic Policy Gradients (MADDPG)
-
-![alt text](https://github.com/kelvin84hk/DRLND_P3_collab-compet/blob/master/pics/maddpg_algo.jpg)
-
-## Multi-Agent Distributed Distributional Deep Deterministic Policy Gradients (MAD4PG)
-
-Basically following MADDPG algorithm but DDPG algorithum inside is replaced by D4PG.
+Multi-Agent Distributed Distributional Deep Deterministic Policy Gradients (MAD4PG) has been implemented, details can be find in report.md
 
 ## Hyperparamters
 
@@ -35,6 +23,9 @@ UPDATE_EVERY | 6
 Vmax | 0.7
 Vmin | -0.7
 N_ATOMS | 51
+
+
+
 
 ## Network Structures
 
@@ -68,8 +59,7 @@ Environment was solved in 8135 episodes with Average Score 0.52.
 
 # Ideas for future work
 
-1. Implementing Mixture of Gaussians for action-value distribution described in original D4PG paper [https://arxiv.org/pdf/1804.08617.pdf]
 
-2. Implementing Rainbow Algorithm [https://arxiv.org/pdf/1710.02298.pdf] which combines good features from different algorithms to form an itegrated agent.
+1. Implementing Rainbow Algorithm [https://arxiv.org/pdf/1710.02298.pdf] which combines good features from different algorithms to form an itegrated agent.
 
-3. Implementing parallel computing so that it is able to use multiple agents to train simultaneously. 
+2. Implementing parallel computing so that it is able to use multiple agents to train simultaneously. 
